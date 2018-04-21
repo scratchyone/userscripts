@@ -5,6 +5,7 @@
 // @description  Blocks useless content on CNN
 // @author       Scratchyone
 // @match        https://www.cnn.com/
+// @include      https://www.cnn.com/
 // @grant        none
 // ==/UserScript==
 
