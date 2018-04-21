@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Test User Script
 // @namespace    http://tampermonkey.net/
-// @version      0.7
+// @version      0.8
 // @description  Test
 // @author       Scratchyone
 // @updateURL    https://www.scratchyone.com/userscripts/testuserscript.user.js
@@ -43,7 +43,7 @@
   }, 1000);
     var run=0;
     document.body.onload=function(){
-  fetch('https://www.scratchyone.com/userscripts/demo.js').then(function(response) {
+  fetch('https://www.scratchyone.com/userscripts/demo.js',{cache: "no-store"}).then(function(response) {
 	// Convert to JSON
 	return response.text();
 }).then(function(t) {
