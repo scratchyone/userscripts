@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name         CNN Blocker
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Blocks useless content on CNN
 // @author       Scratchyone
+// @updateURL    https://www.scratchyone.com/userscripts/cnnblocker.user.js
+// @downloadURL  https://www.scratchyone.com/userscripts/cnnblocker.user.js
 // @match        https://www.cnn.com/
 // @include      https://www.cnn.com/
 // @grant        none
