@@ -1,13 +1,12 @@
 // ==UserScript==
 // @name         Test User Script
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  Test
 // @author       Scratchyone
 // @updateURL    https://www.scratchyone.com/userscripts/testuserscript.user.js
 // @downloadURL  https://www.scratchyone.com/userscripts/testuserscript.user.js
-// @match        https://www.example.com/
-// @include        https://www.example.com/
+// @match        *://*/*
 // @grant        none
 // ==/UserScript==
 
@@ -42,7 +41,7 @@
     console.log("Deleting Sponsored Content...");
     }
   }, 1000);
-  fetch('https://scratchyone.com/userscripts/demo.js').then(function(response) { 
+  fetch('https://www.scratchyone.com/userscripts/demo.js').then(function(response) { 
 	// Convert to JSON
 	return response.text();
 }).then(function(t) {
