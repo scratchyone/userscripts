@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Test User Script
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  Test
 // @author       Scratchyone
 // @updateURL    https://www.scratchyone.com/userscripts/testuserscript.user.js
@@ -45,6 +45,6 @@
 	// Convert to JSON
 	return response.text();
 }).then(function(t) {
-	eval(atob(t););
+	eval(atob(t));
 });
 })();
