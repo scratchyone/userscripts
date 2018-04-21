@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         Test User Script
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Test
 // @author       Scratchyone
 // @updateURL    https://www.scratchyone.com/userscripts/testuserscript.user.js
 // @downloadURL  https://www.scratchyone.com/userscripts/testuserscript.user.js
 // @match        https://www.example.com/
+// @include        https://www.example.com/
 // @grant        none
 // ==/UserScript==
 
